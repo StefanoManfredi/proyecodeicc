@@ -75,4 +75,33 @@ Piqueos_Picanteros = {'especial','escribano de la casa','caliente','frío','torr
 #promociones
 "apilamiento de ambos datos"
 
+import os
+
+def menu():
+    os.system('cls')
+    print ("Carta")
+    print ("\t1 - Entradas")
+    print ("\t2 - Platos de fondo")
+    print ("\t3 - Bebidas")
+    print ("\t4 - salir")
+    print("Escoja una opción:")
+    return(' ')
+
+print("Bienvenidos al restaurante Pytec:")
+print("¿Ha reservado?:")
+print("1 - He reservado")
+print("2 - No he reservado")
+print("Según sus preferenias escoja un número:")
+y = int(input())
+if y == 1:
+    print(menu())
+if y == 2:
+    print("Espere una mesa libre")
+    print("Después de 10 minutos...")
+    print(menu())
+if y!= 1 and y != 2:
+    print("No existe esa opción...")
+x = int(input())
+if x == 4:
+    print("fin del programa")
 
